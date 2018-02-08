@@ -27,7 +27,12 @@ public class Scr_EnemyAI : MonoBehaviour {
     {
         if (moveSpot == null)
         {
-            Debug.LogError("Error: No move spot found!");
+            //Debug.LogError("Error: No move spot found!");
+            moveSpot = GameObject.Find("movePosition").transform;
+        }
+        if(target == null)
+        {
+            target = GameObject.FindGameObjectWithTag("Player").transform;
         }
     }
 
