@@ -20,6 +20,7 @@ public class Scr_EnemyAI : MonoBehaviour {
     public float maxX;
     public float minY;
     public float maxY;
+    private bool hitPlayer = false;
 
 
     // Use this for initialization
@@ -48,14 +49,19 @@ public class Scr_EnemyAI : MonoBehaviour {
         }
 
         //Chase player
-        if (targetDistance < attackDistance)
+        if (targetDistance < attackDistance && !hitPlayer)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, enemyMovementSpeed * Time.deltaTime);
         }
 
-        else if (targetDistance < 1f)
+        else if (targetDistance < attackDistance && hitPlayer)
         {
             MoveAway();
+
+            if (targetDistance == attackDistance)
+            {
+                hitPlayer = false;
+            }
         }
 
         //Patrol set area
@@ -63,7 +69,16 @@ public class Scr_EnemyAI : MonoBehaviour {
         {
             PatrolArea();
         }
+
 	}
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            hitPlayer = true;
+        }
+    }
 
     void LookAtTarget(Transform targetPos)
     {
@@ -94,10 +109,7 @@ public class Scr_EnemyAI : MonoBehaviour {
 
     void MoveAway()
     {
-        while (targetDistance > attackDistance)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, -target.position, enemyMovementSpeed * Time.deltaTime);
-        }
+        transform.position = Vector2.MoveTowards(transform.position, target.position, -enemyMovementSpeed * Time.deltaTime);
     }
 
 }
