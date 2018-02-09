@@ -12,6 +12,7 @@ public class Scr_PlayerOilSystem : MonoBehaviour {
     private float currentOil;
     private float oilRefill;
     public Transform spotLight;
+    public Transform lantern;
 
 	// Use this for initialization
 	void Start () {
@@ -42,13 +43,14 @@ public class Scr_PlayerOilSystem : MonoBehaviour {
     void DrainOil(float drain)
     {
         currentOil -= drain * Time.deltaTime;
-        currentOil = Mathf.Clamp(currentOil, 0, maxOil);
+        //currentOil = Mathf.Clamp(currentOil, 0, maxOil);
         float calcOil = currentOil / maxOil; //Calculate % of maxOil for UI
 
         if (currentOil <= 0)
         {
             spotLight.gameObject.SetActive(false);
             //Use IEnum to deactivate lantern after a a small period of time
+            lantern.gameObject.SetActive(false);
             TriggerLoss();
         }
         SetOil(calcOil);

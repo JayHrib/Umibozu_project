@@ -53,25 +53,15 @@ public class Scr_EnemyAI : MonoBehaviour {
             transform.position = Vector2.MoveTowards(transform.position, target.position, enemyMovementSpeed * Time.deltaTime);
         }
 
+        else if (targetDistance < 1f)
+        {
+            MoveAway();
+        }
+
         //Patrol set area
         else
         {
-            transform.position = Vector2.MoveTowards(transform.position, moveSpot.position, enemyMovementSpeed * Time.deltaTime);
-
-            if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
-            {
-                if (waitTime <= 0)
-                {
-                    LookAtTarget(moveSpot);
-                    moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-                    waitTime = startWaitTime;
-                }
-                else
-                {
-                    waitTime -= Time.deltaTime;
-                }
-            }
-
+            PatrolArea();
         }
 	}
 
@@ -82,4 +72,32 @@ public class Scr_EnemyAI : MonoBehaviour {
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
     }
+
+    void PatrolArea()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, moveSpot.position, enemyMovementSpeed * Time.deltaTime);
+
+        if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
+        {
+            if (waitTime <= 0)
+            {
+                LookAtTarget(moveSpot);
+                moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+                waitTime = startWaitTime;
+            }
+            else
+            {
+                waitTime -= Time.deltaTime;
+            }
+        }
+    }
+
+    void MoveAway()
+    {
+        while (targetDistance > attackDistance)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, -target.position, enemyMovementSpeed * Time.deltaTime);
+        }
+    }
+
 }

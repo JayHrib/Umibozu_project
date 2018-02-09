@@ -47,16 +47,19 @@ public class Scr_PlayerHealthSystem : MonoBehaviour {
             TakeDamage(damage);
         }
 
-        if (other.gameObject.CompareTag("Shark"))
-        {
-            damage = 20f;
-            TakeDamage(damage);
-        }
-
         if (other.gameObject.CompareTag("HealthPack") && currentHealth != maxHealth)
         {
             other.gameObject.SetActive(false);
             RegenHealth(healthRegen);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Shark"))
+        {
+            damage = 20f;
+            TakeDamage(damage);
         }
     }
 
