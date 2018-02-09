@@ -12,8 +12,17 @@ public class Scr_EnemyHealthSystem : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Projectile"))
         {
-            damage = 5;
+            damage = 5f;
             other.gameObject.SetActive(false);
+            TakeDamage(damage);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("CormorantBird"))
+        {
+            damage = 2.5f;
             TakeDamage(damage);
         }
     }

@@ -10,6 +10,8 @@ TagManager:
   - Shark
   - HealthPack
   - OilBarrel
+  - CormorantPickUp
+  - CormorantBird
   layers:
   - Default
   - TransparentFX
