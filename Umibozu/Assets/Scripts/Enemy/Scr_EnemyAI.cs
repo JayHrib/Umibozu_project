@@ -34,7 +34,10 @@ public class Scr_EnemyAI : MonoBehaviour {
 
     void Start () {
         waitTime = startWaitTime;
-        moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+        if(moveSpot.position == null)
+        {
+            moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+        }
 	}
 	
 	// Update is called once per frame
