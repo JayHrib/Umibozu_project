@@ -9,8 +9,6 @@ public class Scr_PlayerShooting : MonoBehaviour {
     public float moveSpeed;
     public float damage = 1;
     public LayerMask whatToHit;
-    
-    public GameObject projectilePrefab;
 
     // Update is called once per frame
     void Update()
@@ -36,9 +34,16 @@ public class Scr_PlayerShooting : MonoBehaviour {
     {
         Vector2 mousePosition = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, (Camera.main.ScreenToWorldPoint(Input.mousePosition).y));
 
-        GameObject arrow = Instantiate(projectilePrefab);
+        GameObject arrow = Scr_ObjectPooler.current.GetPooledObject();
+
+        if (arrow == null)
+        {
+            return;
+        }
+
         arrow.transform.rotation = gameObject.transform.localRotation;
         arrow.transform.position = gameObject.transform.position;
+        arrow.SetActive(true);
         
         arrow.GetComponent<Rigidbody2D>().velocity = new Vector2((mousePosition.x-transform.position.x) * moveSpeed, (mousePosition.y - transform.position.y) * moveSpeed);
         arrow.GetComponent<Rigidbody2D>().velocity.Normalize();

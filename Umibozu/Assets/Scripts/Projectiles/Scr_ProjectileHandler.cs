@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scr_MoveProjectile : MonoBehaviour {
+public class Scr_ProjectileHandler : MonoBehaviour {
 
     private float destroyTimer = 5f;
     private float timeToDestroy = 0f;
 
     private void Start()
     {
-        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), GameObject.FindWithTag("Player").GetComponent<Collider2D>());
+        Physics2D.IgnoreLayerCollision(8, 10);
+            //(GetComponent<Collision2D>(), GameObject.FindWithTag("Player").GetComponent<Collision2D>());
     }
 
     void Update()
@@ -20,14 +21,12 @@ public class Scr_MoveProjectile : MonoBehaviour {
         }
         else
         {
-            Destroy(this.gameObject);
+            gameObject.SetActive(false);
         }
     }
 
     void OnBecameInvisible()
     {
-        Destroy(this.gameObject);
+        gameObject.SetActive(false);
     }
-    
-
 }

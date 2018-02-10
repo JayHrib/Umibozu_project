@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212584810780479926}
   - component: {fileID: 50126771545774746}
   - component: {fileID: 61743511905553326}
-  - component: {fileID: 114170811623503642}
-  m_Layer: 0
+  - component: {fileID: 114963342276430606}
+  m_Layer: 10
   m_Name: Pref_Arrow
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.67089844, y: 2.053634}
   m_EdgeRadius: 0
---- !u!114 &114170811623503642
+--- !u!114 &114963342276430606
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1035066750502088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78938af7e652a89418fb9b06df0b72cb, type: 3}
+  m_Script: {fileID: 11500000, guid: f1dbe499b5d99a44eaaf3a57366863dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212584810780479926

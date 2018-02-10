@@ -20,8 +20,8 @@ public class Scr_PlayerMovement : MonoBehaviour {
         //Move boat
         Vector3 pos = transform.position;
         Vector3 velocity = new Vector3(0, Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime, 0);
-
         pos += rot * velocity;
+
         transform.position = pos;
     }
 }

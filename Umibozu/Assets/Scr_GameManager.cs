@@ -11,7 +11,7 @@ public class Scr_GameManager : MonoBehaviour {
         if (gameHasEnded == false)
         {
             gameHasEnded = true;
-            Debug.Log("Game Over!");
+            //Debug.Log("Game Over!");
             Invoke("LoseScreen", delay);
         }
     }
