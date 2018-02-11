@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4535294359310090}
   - component: {fileID: 212252959100982834}
   - component: {fileID: 50423766272279730}
-  - component: {fileID: 70249069709694444}
   - component: {fileID: 114487563895111208}
   - component: {fileID: 114348843041950978}
-  m_Layer: 0
+  - component: {fileID: 61288204271439898}
+  m_Layer: 11
   m_Name: Pref_Shark
   m_TagString: Shark
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4496530268312450}
   - component: {fileID: 212218878324001514}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: spr_silhouette_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1384339362200234}
   m_LocalRotation: {x: -0, y: -0, z: 0.004828758, w: 0.9999884}
-  m_LocalPosition: {x: -13.84, y: 0.01, z: 0}
+  m_LocalPosition: {x: -2.2313216, y: -24.008327, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 4496530268312450}
@@ -85,17 +85,17 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
---- !u!70 &70249069709694444
-CapsuleCollider2D:
+--- !u!61 &61288204271439898
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -106,9 +106,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.012957453, y: -0.6790846}
-  m_Size: {x: 0.7736998, y: 2.834404}
-  m_Direction: 0
+  m_Offset: {x: -0.008062005, y: -0.95904076}
+  m_SpriteTilingProperty:
+    border: {x: 1.67, y: 0, z: 1.5, w: 0}
+    pivot: {x: 0.48675495, y: 0.8738043}
+    oldSize: {x: 5.12, y: 5.12}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7011914, y: 3.210325}
+  m_EdgeRadius: 0
 --- !u!114 &114348843041950978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,7 +135,7 @@ MonoBehaviour:
   enemyMovementSpeed: 2.5
   rotationSpeed: 180
   target: {fileID: 0}
-  startWaitTime: 2
+  startWaitTime: 0
   moveSpot: {fileID: 0}
   minX: -30
   maxX: -11

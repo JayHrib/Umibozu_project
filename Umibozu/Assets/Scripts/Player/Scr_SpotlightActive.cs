@@ -8,10 +8,13 @@ public class Scr_SpotlightActive : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-        if (Input.GetKeyDown(KeyCode.F))
+		if (!Scr_PauseMenu.GameIsPaused)
         {
-            OnOff();
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                FindObjectOfType<Scr_AudioManager>().PlaySound("LightSwitch");
+                OnOff();
+            }
         }
 	}
 

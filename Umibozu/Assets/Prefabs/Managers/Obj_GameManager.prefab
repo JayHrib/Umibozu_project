@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4492260434737708}
   - component: {fileID: 114003882381620842}
+  - component: {fileID: 114695361162714326}
   m_Layer: 0
   m_Name: Obj_GameManager
   m_TagString: Untagged
@@ -34,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1102327576379090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 29.289036, y: 7.019125, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52,3 +53,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 3
+--- !u!114 &114695361162714326
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1102327576379090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f91a66bcc8d60546beaf41cfa377394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObject: {fileID: 1035066750502088, guid: b35a119407a7332449fd76539a0452b2,
+    type: 2}
+  pooledAmount: 5
+  willGrow: 1

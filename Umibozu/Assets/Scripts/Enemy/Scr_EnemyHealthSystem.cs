@@ -7,6 +7,13 @@ public class Scr_EnemyHealthSystem : MonoBehaviour {
     public float health = 0;
     private float damage = 0;
     //TODO: Add public float damage to use in other scripts for damage
+    private Scr_AudioManager audioManager;
+
+    void Start()
+    {
+        audioManager = Scr_AudioManager.instance;
+    }
+
 
 	void OnCollisionEnter2D(Collision2D other)
     {
@@ -20,6 +27,13 @@ public class Scr_EnemyHealthSystem : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.gameObject.CompareTag("Projectile"))
+        {
+            Debug.Log("Enemy hit - play sound");
+            audioManager.PlaySound("HitEnemy");
+            Debug.Log("Sound should've been played");
+        }
+
         if (other.gameObject.CompareTag("CormorantBird"))
         {
             damage = 2.5f;

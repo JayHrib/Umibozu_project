@@ -17,22 +17,40 @@ public class Scr_PlayerHealthSystem : MonoBehaviour {
     float shakeAmount = 0.7f;
     float decreaseFactor = 1;
 
+    private float camX;
+    private float camY;
+    private float camZ;
+
+    //Cache
+    private Scr_AudioManager audioManager;
+
     // Use this for initialization
     void Start () {
         currentHealth = maxHealth;
         originalColor = this.GetComponent<SpriteRenderer>().color;
+
+        //Caching
+        audioManager = Scr_AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.LogError("Error: AudioManager not found in the scene!");
+        }
 	}
 
     // Update is called once per frame
     void Update()
     {
-
         if (this.GetComponent<SpriteRenderer>().color != originalColor)
         {
             Debug.Log("Color is not original");
             timerDamageColorChange++;
             DamageEffect(timerDamageColorChange);
-            GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition = Random.insideUnitSphere * shakeAmount;
+            camX = GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition.x; 
+            camY = GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition.y;
+            camZ = GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition.z;
+            Vector3 camShake = new Vector3(camX * (Random.insideUnitSphere.x * shakeAmount), camY * (Random.insideUnitSphere.y * shakeAmount), camZ);
+
+            GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition = camShake;
             shake -= Time.deltaTime * decreaseFactor;
         }
 
@@ -41,12 +59,6 @@ public class Scr_PlayerHealthSystem : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Hazard"))
-        {
-            damage = 15f;
-            TakeDamage(damage);
-        }
-
         if (other.gameObject.CompareTag("HealthPack") && currentHealth != maxHealth)
         {
             other.gameObject.SetActive(false);
@@ -59,6 +71,13 @@ public class Scr_PlayerHealthSystem : MonoBehaviour {
         if (other.gameObject.CompareTag("Shark"))
         {
             damage = 20f;
+            TakeDamage(damage);
+        }
+
+        if (other.gameObject.CompareTag("Hazard"))
+        {
+            audioManager.PlaySound("ShipCrash");
+            damage = 15f;
             TakeDamage(damage);
         }
     }

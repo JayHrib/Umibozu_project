@@ -4,29 +4,30 @@ using UnityEngine;
 
 public class Scr_ProjectileHandler : MonoBehaviour {
 
-    private float destroyTimer = 5f;
-    private float timeToDestroy = 0f;
+    public float destroyTimer = 2f;
 
     private void Start()
     {
         Physics2D.IgnoreLayerCollision(8, 10);
-            //(GetComponent<Collision2D>(), GameObject.FindWithTag("Player").GetComponent<Collision2D>());
     }
 
-    void Update()
+    void OnEnable()
     {
-        if (destroyTimer > timeToDestroy)
-        {
-            destroyTimer -= Time.deltaTime;
-        }
-        else
-        {
-            gameObject.SetActive(false);
-        }
+        Invoke("Destroy", destroyTimer);
+    }
+
+    void Destroy()
+    {
+        gameObject.SetActive(false);
     }
 
     void OnBecameInvisible()
     {
-        gameObject.SetActive(false);
+        Destroy();
+    }
+
+    void OnDisable()
+    {
+        CancelInvoke();
     }
 }

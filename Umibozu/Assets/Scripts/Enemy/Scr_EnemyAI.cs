@@ -21,16 +21,7 @@ public class Scr_EnemyAI : MonoBehaviour {
     public float minY;
     public float maxY;
     private bool hitPlayer = false;
-
-
-    // Use this for initialization
-    void Awake()
-    {
-        if (moveSpot == null)
-        {
-            Debug.LogError("Error: No move spot found!");
-        }
-    }
+    private IEnumerator coroutine;
 
     void Start () {
         waitTime = startWaitTime;
@@ -46,26 +37,22 @@ public class Scr_EnemyAI : MonoBehaviour {
         LookAtTarget(target);
 
         //Turn towards player
-        if (targetDistance < enemyLookDistance)
+       /* if (targetDistance < enemyLookDistance)
         {
             LookAtTarget(target);
-        }
+        }*/
 
         //Chase player
         if (targetDistance < attackDistance && !hitPlayer)
         {
+            LookAtTarget(target);
             transform.position = Vector2.MoveTowards(transform.position, target.position, enemyMovementSpeed * Time.deltaTime);
         }
 
-        else if (targetDistance < attackDistance && hitPlayer)
+        /*if (hitPlayer)
         {
             MoveAway();
-
-            if (targetDistance == attackDistance)
-            {
-                hitPlayer = false;
-            }
-        }
+        }*/
 
         //Patrol set area
         else
@@ -80,6 +67,7 @@ public class Scr_EnemyAI : MonoBehaviour {
         if (other.gameObject.CompareTag("Player"))
         {
             hitPlayer = true;
+            MoveAway();
         }
     }
 
@@ -113,6 +101,16 @@ public class Scr_EnemyAI : MonoBehaviour {
     void MoveAway()
     {
         transform.position = Vector2.MoveTowards(transform.position, target.position, -enemyMovementSpeed * Time.deltaTime);
+        coroutine = MoveBackTimer(2.0f);
+    }
+
+    private IEnumerator MoveBackTimer(float time)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(time);
+            hitPlayer = false;
+        }
     }
 
 }

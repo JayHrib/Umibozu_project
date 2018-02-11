@@ -10,22 +10,41 @@ public class Scr_PlayerShooting : MonoBehaviour {
     public float damage = 1;
     public LayerMask whatToHit;
 
+    //cache
+    private Scr_AudioManager audioManager;
+    private Scr_ObjectPooler objectPool;
+
+    void Start()
+    {
+        //caching
+        audioManager = Scr_AudioManager.instance;
+        objectPool = Scr_ObjectPooler.current;
+
+        if (audioManager == null)
+        {
+            Debug.LogError("Error: No AudioManager found in the scene!");
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (fireRate == 0)
+        if (!Scr_PauseMenu.GameIsPaused)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (fireRate == 0)
             {
-                Shoot();
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    Shoot();
+                }
             }
-        }
-        else
-        {
-            if (Input.GetButton("Fire1") && Time.time > fireTime)
+            else
             {
-                fireTime = Time.time + 1 / fireRate;
-                Shoot();
+                if (Input.GetButton("Fire1") && Time.time > fireTime)
+                {
+                    fireTime = Time.time + 1 / fireRate;
+                    Shoot();
+                }
             }
         }
     }
@@ -34,27 +53,20 @@ public class Scr_PlayerShooting : MonoBehaviour {
     {
         Vector2 mousePosition = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, (Camera.main.ScreenToWorldPoint(Input.mousePosition).y));
 
-        GameObject arrow = Scr_ObjectPooler.current.GetPooledObject();
+        GameObject arrow = objectPool.GetPooledObject();
 
         if (arrow == null)
         {
+            Debug.Log("Arrow is null");
             return;
         }
 
         arrow.transform.rotation = gameObject.transform.localRotation;
         arrow.transform.position = gameObject.transform.position;
         arrow.SetActive(true);
-        
+
         arrow.GetComponent<Rigidbody2D>().velocity = new Vector2((mousePosition.x-transform.position.x) * moveSpeed, (mousePosition.y - transform.position.y) * moveSpeed);
         arrow.GetComponent<Rigidbody2D>().velocity.Normalize();
- 
-        //Raycast firing
-        /*RaycastHit2D hit = Physics2D.Raycast(firePointPosition, (mousePosition - firePointPosition), 100, whatToHit);
-        Debug.DrawLine(firePointPosition, (mousePosition - firePointPosition) * 100);
-        if (hit.collider != null)
-        {
-            Debug.DrawLine(firePointPosition, hit.point, Color.red);
-        }
-       Debug.Log(hit.collider.name + " was hit for " + damage + " damage.");*/
+        Debug.Log("Arrow fired!");
     }
 }

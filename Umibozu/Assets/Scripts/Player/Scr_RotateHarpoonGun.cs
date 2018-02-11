@@ -10,6 +10,10 @@ public class Scr_RotateHarpoonGun : MonoBehaviour {
         difference.Normalize();
 
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        transform.localRotation = Quaternion.Euler(0f, 0f, rotZ - 90);
+
+        if (!Scr_PauseMenu.GameIsPaused)
+        {
+            transform.localRotation = Quaternion.Euler(0f, 0f, rotZ - 90);
+        }
 	}
 }
