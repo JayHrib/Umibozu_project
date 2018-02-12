@@ -14,7 +14,7 @@ public class Scr_PlayerHealthSystem : MonoBehaviour {
     private Color originalColor;
     private float timerDamageColorChange = 0;
     float shake = 0;
-    float shakeAmount = 0.7f;
+    float shakeAmount = 0.1f;
     float decreaseFactor = 1;
 
     private float camX;

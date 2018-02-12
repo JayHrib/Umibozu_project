@@ -46,4 +46,9 @@ public class Scr_PauseMenu : MonoBehaviour {
         FindObjectOfType<Scr_GameManager>().Restart();
     }
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
 }
