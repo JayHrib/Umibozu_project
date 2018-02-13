@@ -9,6 +9,9 @@ public class Scr_PlayerShooting : MonoBehaviour {
     public float moveSpeed;
     public float damage = 1;
     public LayerMask whatToHit;
+    public float startReloadTimer = 1.0f;
+    public float reloadTimer;
+    private bool readyToFire = false;
 
     //cache
     private Scr_AudioManager audioManager;
@@ -16,6 +19,8 @@ public class Scr_PlayerShooting : MonoBehaviour {
 
     void Start()
     {
+        reloadTimer = 0;
+
         //caching
         audioManager = Scr_AudioManager.instance;
         objectPool = Scr_ObjectPooler.current;
@@ -33,10 +38,25 @@ public class Scr_PlayerShooting : MonoBehaviour {
         {
             if (fireRate == 0)
             {
-                if (Input.GetButtonDown("Fire1"))
+                //Draw bow
+                if (Input.GetButtonDown("Fire1") && reloadTimer <= 0)
                 {
-                    Shoot();
+                    readyToFire = true;
                 }
+
+                else if (reloadTimer > 0)
+                {
+                    reloadTimer -= Time.deltaTime;
+                }
+
+                //Release arrow
+                if (Input.GetButtonUp("Fire1") && readyToFire)
+                {
+                    readyToFire = false;
+                    Shoot();
+                    reloadTimer = startReloadTimer;
+                }
+
             }
             else
             {
@@ -57,7 +77,6 @@ public class Scr_PlayerShooting : MonoBehaviour {
 
         if (arrow == null)
         {
-            Debug.Log("Arrow is null");
             return;
         }
 

@@ -84,7 +84,7 @@ public class Scr_EnemyAI : MonoBehaviour {
 
     void MoveAway()
     {
-        transform.position = Vector2.MoveTowards(transform.localPosition, target.position, -enemyMovementSpeed * Time.deltaTime);
+        transform.localPosition = Vector2.MoveTowards(transform.localPosition, target.position, -enemyMovementSpeed * Time.deltaTime);
         coroutine = MoveBackTimer(2.0f);
     }
 
