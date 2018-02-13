@@ -67,6 +67,5 @@ public class Scr_PlayerShooting : MonoBehaviour {
 
         arrow.GetComponent<Rigidbody2D>().velocity = new Vector2((mousePosition.x-transform.position.x) * moveSpeed, (mousePosition.y - transform.position.y) * moveSpeed);
         arrow.GetComponent<Rigidbody2D>().velocity.Normalize();
-        Debug.Log("Arrow fired!");
     }
 }

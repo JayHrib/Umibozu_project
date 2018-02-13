@@ -25,22 +25,12 @@ public class Scr_EnemyAI : MonoBehaviour {
 
     void Start () {
         waitTime = startWaitTime;
-        if(moveSpot.position == null)
-        {
-            moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-        }
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
         targetDistance = Vector3.Distance(target.position, transform.position);
         LookAtTarget(target);
-
-        //Turn towards player
-       /* if (targetDistance < enemyLookDistance)
-        {
-            LookAtTarget(target);
-        }*/
 
         //Chase player
         if (targetDistance < attackDistance && !hitPlayer)
@@ -49,17 +39,11 @@ public class Scr_EnemyAI : MonoBehaviour {
             transform.position = Vector2.MoveTowards(transform.position, target.position, enemyMovementSpeed * Time.deltaTime);
         }
 
-        /*if (hitPlayer)
-        {
-            MoveAway();
-        }*/
-
         //Patrol set area
         else
         {
             PatrolArea();
         }
-
 	}
 
     void OnCollisionEnter2D(Collision2D other)
@@ -81,14 +65,14 @@ public class Scr_EnemyAI : MonoBehaviour {
 
     void PatrolArea()
     {
-        transform.position = Vector2.MoveTowards(transform.position, moveSpot.position, enemyMovementSpeed * Time.deltaTime);
+        transform.localPosition = Vector2.MoveTowards(transform.localPosition, moveSpot.localPosition, enemyMovementSpeed * Time.deltaTime);
 
         if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
         {
             if (waitTime <= 0)
             {
                 LookAtTarget(moveSpot);
-                moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+                moveSpot.localPosition = new Vector2(Random.Range(-35, 35), Random.Range(-25, 100));
                 waitTime = startWaitTime;
             }
             else
@@ -100,7 +84,7 @@ public class Scr_EnemyAI : MonoBehaviour {
 
     void MoveAway()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target.position, -enemyMovementSpeed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.localPosition, target.position, -enemyMovementSpeed * Time.deltaTime);
         coroutine = MoveBackTimer(2.0f);
     }
 

@@ -40,19 +40,22 @@ public class Scr_PlayerHealthSystem : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (this.GetComponent<SpriteRenderer>().color != originalColor)
+        /*if (this.GetComponent<SpriteRenderer>().color != originalColor)
         {
             Debug.Log("Color is not original");
             timerDamageColorChange++;
             DamageEffect(timerDamageColorChange);
-            camX = GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition.x; 
-            camY = GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition.y;
+            camX = gameObject.transform.localPosition.x;
+            camY = gameObject.transform.localPosition.y;
             camZ = GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition.z;
             Vector3 camShake = new Vector3(camX * (Random.insideUnitSphere.x * shakeAmount), camY * (Random.insideUnitSphere.y * shakeAmount), camZ);
 
             GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition = camShake;
             shake -= Time.deltaTime * decreaseFactor;
-        }
+        }*/
+
+        timerDamageColorChange++;
+        DamageEffect(timerDamageColorChange);
 
     }
     
@@ -84,7 +87,6 @@ public class Scr_PlayerHealthSystem : MonoBehaviour {
 
     void TakeDamage(float damage)
     {
-        Debug.Log("Taking damage!");
         this.GetComponent<SpriteRenderer>().color = damageColor;
         currentHealth -= damage;
         float calcHealth = currentHealth / maxHealth; //Calculate % of maxHealth for UI

@@ -29,9 +29,7 @@ public class Scr_EnemyHealthSystem : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Projectile"))
         {
-            Debug.Log("Enemy hit - play sound");
             audioManager.PlaySound("HitEnemy");
-            Debug.Log("Sound should've been played");
         }
 
         if (other.gameObject.CompareTag("CormorantBird"))
