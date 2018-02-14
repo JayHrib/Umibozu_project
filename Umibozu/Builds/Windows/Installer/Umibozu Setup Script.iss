@@ -8,7 +8,7 @@
 AppId={{873C5B9C-B5D5-4B37-8491-AFA600B88785}
 AppName=Umibozu
 AppVersion=0.0.1
-;AppVerName=Umibozu 0.0.1
+;AppVerName=Umibozu Alpha
 AppPublisher=Vampire
 AppPublisherURL=http://www.example.com/
 AppSupportURL=http://www.example.com/
@@ -27,14 +27,15 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\JayHr\Documents\GitHub\Umibozu_project\Umibozu\Builds\Windows\x86\PlaytestBuild(0.0.1).exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\JayHr\Documents\GitHub\Umibozu_project\Umibozu\Builds\Windows\x86\PlaytestBuild(0.0.1)_Data\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\JayHr\Documents\GitHub\Umibozu_project\Umibozu\Builds\Windows\x86\Alpha (x86).exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\JayHr\Documents\GitHub\Umibozu_project\Umibozu\Builds\Windows\x86\Alpha (x86)_Data\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\JayHr\Documents\GitHub\Umibozu_project\Umibozu\Builds\Windows\x86\UnityPlayer.dll"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
-Name: "{commonprograms}\Umibozu"; Filename: "{app}\PlaytestBuild(0.0.1).exe"
-Name: "{commondesktop}\Umibozu"; Filename: "{app}\PlaytestBuild(0.0.1).exe"; Tasks: desktopicon
+Name: "{commonprograms}\Umibozu"; Filename: "{app}\Alpha.exe"
+Name: "{commondesktop}\Umibozu"; Filename: "{app}Alpha.exe"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\PlaytestBuild(0.0.1).exe"; Description: "{cm:LaunchProgram,Umibozu}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\Alpha.exe"; Description: "{cm:LaunchProgram,Umibozu}"; Flags: nowait postinstall skipifsilent
 

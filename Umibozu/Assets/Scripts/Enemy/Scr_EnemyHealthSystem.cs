@@ -34,6 +34,7 @@ public class Scr_EnemyHealthSystem : MonoBehaviour {
 
         if (other.gameObject.CompareTag("CormorantBird"))
         {
+            audioManager.PlaySound("HitEnemy");
             damage = 2.5f;
             TakeDamage(damage);
         }

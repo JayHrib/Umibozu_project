@@ -148,7 +148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1704551033071268
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,8 +222,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1704551033071268}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 15.1, z: -0.15039062}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 0.26, y: 16.87, z: -0.15039062}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 4146186621191914}
   m_RootOrder: 6
@@ -248,7 +248,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1508565243035944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.35, y: -4.3, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children:
   - {fileID: 4893274200923914}
@@ -322,7 +322,7 @@ Transform:
   m_GameObject: {fileID: 1614641902072930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -7.7, z: 0}
-  m_LocalScale: {x: 2.5, y: 10, z: 1}
+  m_LocalScale: {x: 5.6874995, y: 10, z: 1}
   m_Children:
   - {fileID: 4183475531718060}
   m_Father: {fileID: 4199841202149086}
@@ -414,9 +414,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.11065085, y: 0}
+  m_Offset: {x: 0.07010579, y: 0}
   serializedVersion: 2
-  m_Radius: 5
+  m_Radius: 9.176284
 --- !u!70 &70372233191332560
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -484,8 +484,8 @@ MonoBehaviour:
   whatToHit:
     serializedVersion: 2
     m_Bits: 768
-  projectilePrefab: {fileID: 1035066750502088, guid: b35a119407a7332449fd76539a0452b2,
-    type: 2}
+  startReloadTimer: 1
+  reloadTimer: 0
 --- !u!114 &114610243895308786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -552,8 +552,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141b468856c6ce6489cc4245c5a01406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
-  rotationSpeed: 45
+  movementSpeed: 7
+  rotationSpeed: 90
 --- !u!212 &212153993014374356
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -676,7 +676,7 @@ SpriteRenderer:
   m_SortingLayerID: 1353009579
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0a874dbc757a36443b6c50e7e844dca5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 63b5525354d1e294e84f763d4dc76459, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
