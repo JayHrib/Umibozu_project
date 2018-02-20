@@ -12,6 +12,7 @@ TagManager:
   - OilBarrel
   - CormorantPickUp
   - CormorantBird
+  - Evidence
   layers:
   - Default
   - TransparentFX

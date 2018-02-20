@@ -7,21 +7,31 @@ public class Scr_PlayerMovement : MonoBehaviour {
     public float movementSpeed;
     public float rotationSpeed;
 
-	// Update is called once per frame
-	void Update () {
+    void Update()
+    {
+        float rotatePlayer = Input.GetAxis("Horizontal");
 
         //Rotate boat
         Quaternion rot = transform.rotation;
         float z = rot.eulerAngles.z;
-        z -= Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
+        z -= rotatePlayer * rotationSpeed * Time.deltaTime;
         rot = Quaternion.Euler(0, 0, z);
         transform.rotation = rot;
+    }
+
+    void FixedUpdate()
+    {
+        Rigidbody2D rb2d = gameObject.GetComponent<Rigidbody2D>();
+        float movePlayer = Input.GetAxis("Vertical");
 
         //Move boat
-        Vector3 pos = transform.position;
-        Vector3 velocity = new Vector3(0, Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime, 0);
-        pos += rot * velocity;
+        Vector3 movement = new Vector3(0.0f, movePlayer, 0.0f);
+        movement.Normalize();
+        rb2d.AddRelativeForce(movement * movementSpeed);
 
-        transform.position = pos;
+
+        
+
+
     }
 }
