@@ -43,7 +43,6 @@ public class Scr_PlayerOilSystem : MonoBehaviour {
     void DrainOil(float drain)
     {
         currentOil -= drain * Time.deltaTime;
-        //currentOil = Mathf.Clamp(currentOil, 0, maxOil);
         float calcOil = currentOil / maxOil; //Calculate % of maxOil for UI
 
         if (currentOil <= 0)
@@ -51,7 +50,7 @@ public class Scr_PlayerOilSystem : MonoBehaviour {
             spotLight.gameObject.SetActive(false);
             //Use IEnum to deactivate lantern after a a small period of time
             lantern.gameObject.SetActive(false);
-            TriggerLoss();
+            ShutDownLight();
         }
         SetOil(calcOil);
     }
@@ -74,8 +73,8 @@ public class Scr_PlayerOilSystem : MonoBehaviour {
         oilMeter.fillAmount = myOil;
     }
 
-    void TriggerLoss()
+    void ShutDownLight()
     {
-        FindObjectOfType<Scr_GameManager>().EndGame();
+       //Flicker and shut down light
     }
 }

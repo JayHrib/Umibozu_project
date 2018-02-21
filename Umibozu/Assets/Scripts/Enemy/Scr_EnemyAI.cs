@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Scr_EnemyAI : MonoBehaviour {
 
+    private Rigidbody2D rb;
+
     //Player detection
     private float targetDistance;
     public float enemyLookDistance;
@@ -24,13 +26,14 @@ public class Scr_EnemyAI : MonoBehaviour {
     private IEnumerator coroutine;
 
     void Start () {
+        rb = GetComponent<Rigidbody2D>();
         waitTime = startWaitTime;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
         targetDistance = Vector3.Distance(target.position, transform.position);
-        LookAtTarget(target);
+        LookAtTarget(moveSpot);
 
         //Chase player
         if (targetDistance < attackDistance && !hitPlayer)
@@ -55,17 +58,20 @@ public class Scr_EnemyAI : MonoBehaviour {
         }
     }
 
-    void LookAtTarget(Transform targetPos)
+    void LookAtTarget(Transform target)
     {
-        Vector2 direction = Camera.main.WorldToViewportPoint(targetPos.position) - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+        Vector2 direction = (Vector2)target.position - rb.position;
+        direction.Normalize();
+
+        float rotateAmount = Vector3.Cross(direction, transform.up).z;
+
+        rb.angularVelocity = -rotateAmount * rotationSpeed;
     }
 
     void PatrolArea()
     {
-        transform.localPosition = Vector2.MoveTowards(transform.localPosition, moveSpot.localPosition, enemyMovementSpeed * Time.deltaTime);
+        //transform.localPosition = Vector2.MoveTowards(transform.localPosition, moveSpot.localPosition, enemyMovementSpeed * Time.deltaTime);
+        rb.velocity = transform.up * enemyMovementSpeed;
 
         if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
         {

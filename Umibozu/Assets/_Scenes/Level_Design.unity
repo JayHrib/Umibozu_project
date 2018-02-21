@@ -4231,6 +4231,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 212614775505828934, guid: 476a015b0022af742bacf05da62108ea,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 1880374325}
     - target: {fileID: 114618806136452320, guid: 476a015b0022af742bacf05da62108ea,
         type: 2}
       propertyPath: healthBar
@@ -4241,21 +4246,11 @@ Prefab:
       propertyPath: oilMeter
       value: 
       objectReference: {fileID: 1389267307}
-    - target: {fileID: 114610243895308786, guid: 476a015b0022af742bacf05da62108ea,
+    - target: {fileID: 114321029346696422, guid: 476a015b0022af742bacf05da62108ea,
         type: 2}
-      propertyPath: spotlightOilDrain
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114907536543043140, guid: 476a015b0022af742bacf05da62108ea,
-        type: 2}
-      propertyPath: rotationSpeed
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 114907536543043140, guid: 476a015b0022af742bacf05da62108ea,
-        type: 2}
-      propertyPath: movementSpeed
-      value: 3
-      objectReference: {fileID: 0}
+      propertyPath: editorMesh
+      value: 
+      objectReference: {fileID: 684742736}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 476a015b0022af742bacf05da62108ea, type: 2}
   m_IsPrefabParent: 0
@@ -14242,6 +14237,136 @@ Transform:
   m_Father: {fileID: 976339796}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &684742736
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Mask Editor Mesh
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0.5, y: 0.5, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000002000100020003000100
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 11
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 0000000000000000000000000000008000000080000080bf00000000000000000000803f00000000000000000000008000000080000080bf0000803f00000000000000000000803f000000000000008000000080000080bf000000000000803f0000803f0000803f000000000000008000000080000080bf0000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.5, y: 0.5, z: 0}
+    m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
 --- !u!4 &715403757 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4810857740634970, guid: fbd062d2d9620a949a2dbc3b37b9fa3d,
@@ -39546,6 +39671,51 @@ Transform:
   m_PrefabParentObject: {fileID: 4810857740634970, guid: fbd062d2d9620a949a2dbc3b37b9fa3d,
     type: 2}
   m_PrefabInternal: {fileID: 1028437192}
+--- !u!21 &1880374325
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sprites-Alpha-Mask-WorldCoords
+  m_Shader: {fileID: 4800000, guid: 95ce4da6af347e04ab494d238f27ab29, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _CLAMPHORIZ_ON _CLAMPVERT_ON _ENABLED_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 2800000, guid: e6f227aa5d10cb64189933f2789d1162, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ClampBorder: 1
+    - _ClampHoriz: 1
+    - _ClampVert: 1
+    - _ColorMask: 15
+    - _Cutoff: 0.5
+    - _Enabled: 1
+    - _IsThisText: 1
+    - _PixelSnap: 0
+    - _Shininess: 0.078125
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseAlphaChannel: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
 --- !u!1 &1882179196
 GameObject:
   m_ObjectHideFlags: 0
