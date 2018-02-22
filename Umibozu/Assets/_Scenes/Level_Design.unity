@@ -210,9 +210,9 @@ MonoBehaviour:
   sounds:
   - name: LightSwitch
     clip: {fileID: 8300000, guid: c5cdc2f0cf9fa4043b3dce179902026e, type: 3}
-    volume: 0.25
-    pitch: 0.5
-    randomVolume: 0.3
+    volume: 0.37
+    pitch: 0.84
+    randomVolume: 0.32
     randomPitch: 0.153
   - name: ShipCrash
     clip: {fileID: 8300000, guid: 6605b6adf121c1248bc7627d8f4570ed, type: 3}
@@ -4235,7 +4235,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1880374325}
+      objectReference: {fileID: 408409445}
     - target: {fileID: 114618806136452320, guid: 476a015b0022af742bacf05da62108ea,
         type: 2}
       propertyPath: healthBar
@@ -5606,6 +5606,51 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 402915632}
+--- !u!21 &408409445
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sprites-Alpha-Mask-WorldCoords
+  m_Shader: {fileID: 4800000, guid: 95ce4da6af347e04ab494d238f27ab29, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _CLAMPHORIZ_ON _CLAMPVERT_ON _ENABLED_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 2800000, guid: e6f227aa5d10cb64189933f2789d1162, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ClampBorder: 1
+    - _ClampHoriz: 1
+    - _ClampVert: 1
+    - _ColorMask: 15
+    - _Cutoff: 0.5
+    - _Enabled: 1
+    - _IsThisText: 1
+    - _PixelSnap: 0
+    - _Shininess: 0.078125
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseAlphaChannel: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
 --- !u!1001 &417310260
 Prefab:
   m_ObjectHideFlags: 0
@@ -39671,51 +39716,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4810857740634970, guid: fbd062d2d9620a949a2dbc3b37b9fa3d,
     type: 2}
   m_PrefabInternal: {fileID: 1028437192}
---- !u!21 &1880374325
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Sprites-Alpha-Mask-WorldCoords
-  m_Shader: {fileID: 4800000, guid: 95ce4da6af347e04ab494d238f27ab29, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _CLAMPHORIZ_ON _CLAMPVERT_ON _ENABLED_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 2800000, guid: e6f227aa5d10cb64189933f2789d1162, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ClampBorder: 1
-    - _ClampHoriz: 1
-    - _ClampVert: 1
-    - _ColorMask: 15
-    - _Cutoff: 0.5
-    - _Enabled: 1
-    - _IsThisText: 1
-    - _PixelSnap: 0
-    - _Shininess: 0.078125
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseAlphaChannel: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
 --- !u!1 &1882179196
 GameObject:
   m_ObjectHideFlags: 0
