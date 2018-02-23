@@ -1221,6 +1221,11 @@ Prefab:
       propertyPath: oilMeter
       value: 
       objectReference: {fileID: 1598463436}
+    - target: {fileID: 50865105490952784, guid: 476a015b0022af742bacf05da62108ea,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 476a015b0022af742bacf05da62108ea, type: 2}
   m_IsPrefabParent: 0
@@ -6483,7 +6488,7 @@ MonoBehaviour:
   mainTexTiling: {x: 1, y: 1}
   mainTexOffset: {x: 0, y: 0}
   createdMatsStorage: []
-  instanceID: 12986
+  instanceID: 14258
   editorMesh: {fileID: 1681174857}
   maskVersion: 1
   maskeeVersion: 1
@@ -10061,40 +10066,9 @@ Prefab:
       propertyPath: moveSpot
       value: 
       objectReference: {fileID: 1636392508}
-    - target: {fileID: 212218878324001514, guid: fcce9cfc7832d9b48998beef18a78e26,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1733104451755986, guid: fcce9cfc7832d9b48998beef18a78e26, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212252959100982834, guid: fcce9cfc7832d9b48998beef18a78e26,
-        type: 2}
-      propertyPath: m_MaskInteraction
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4535294359310090, guid: fcce9cfc7832d9b48998beef18a78e26, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4535294359310090, guid: fcce9cfc7832d9b48998beef18a78e26, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 50423766272279730, guid: fcce9cfc7832d9b48998beef18a78e26,
         type: 2}
       propertyPath: m_CollisionDetection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50423766272279730, guid: fcce9cfc7832d9b48998beef18a78e26,
-        type: 2}
-      propertyPath: m_Mass
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1384339362200234, guid: fcce9cfc7832d9b48998beef18a78e26, type: 2}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

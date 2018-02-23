@@ -73,7 +73,7 @@ public class Scr_PlayerHealthSystem : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Shark"))
         {
-            damage = 20f;
+            damage = 10f;
             TakeDamage(damage);
         }
 

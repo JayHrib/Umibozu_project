@@ -216,7 +216,7 @@ MonoBehaviour:
     randomPitch: 0.153
   - name: ShipCrash
     clip: {fileID: 8300000, guid: 6605b6adf121c1248bc7627d8f4570ed, type: 3}
-    volume: 0.1
+    volume: 0.07
     pitch: 0.5
     randomVolume: 0.219
     randomPitch: 0.1
@@ -4012,7 +4012,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4492260434737708, guid: 3303d1ce71b2fb0459a7f89bc4af14cc, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1102327576379090, guid: 3303d1ce71b2fb0459a7f89bc4af14cc, type: 2}
       propertyPath: m_Name
@@ -18789,7 +18789,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4495243625636356, guid: 9a0e509fccef8d344bfb37cb000866a1, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114902386422842704, guid: 9a0e509fccef8d344bfb37cb000866a1,
         type: 2}
