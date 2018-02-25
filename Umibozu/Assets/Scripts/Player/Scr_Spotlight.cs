@@ -14,7 +14,7 @@ public class Scr_Spotlight : MonoBehaviour {
     }
     void Awake()
     {
-        spotlightLight = transform.Find("Obj_Spotlight");
+        spotlightLight = transform.Find("obj_shipSpotlight");
     }
 
 	// Update is called once per frame
