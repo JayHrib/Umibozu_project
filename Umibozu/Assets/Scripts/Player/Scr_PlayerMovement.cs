@@ -28,10 +28,5 @@ public class Scr_PlayerMovement : MonoBehaviour {
         Vector3 movement = new Vector3(0.0f, movePlayer, 0.0f);
         movement.Normalize();
         rb2d.AddRelativeForce(movement * movementSpeed);
-
-
-        
-
-
     }
 }

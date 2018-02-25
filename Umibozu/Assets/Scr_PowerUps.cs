@@ -14,7 +14,7 @@ public class Scr_PowerUps : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (cormorant.gameObject.activeInHierarchy)
+		/*if (cormorant.gameObject.activeInHierarchy)
         {
             if (cormorantTimer > 0)
             {
@@ -24,7 +24,7 @@ public class Scr_PowerUps : MonoBehaviour {
             {
                 cormorant.gameObject.SetActive(false);
             }
-        }
+        }*/
 	}
 
     void OnTriggerEnter2D(Collider2D other)

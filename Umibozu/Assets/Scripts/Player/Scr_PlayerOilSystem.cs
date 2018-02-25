@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Scr_PlayerOilSystem : MonoBehaviour {
 
+    private Scr_AudioManager audioManager;
+
     public Image oilMeter;
     public float maxOil;
     public float spotlightOilDrain;
@@ -14,9 +16,15 @@ public class Scr_PlayerOilSystem : MonoBehaviour {
     public Transform spotLight;
     public Transform lantern;
 
+    public float minSec = 0.5f;
+    public float maxSec = 1.5f;
+
+    private IEnumerator coroutine;
+
 	// Use this for initialization
 	void Start () {
         currentOil = maxOil;
+        audioManager = Scr_AudioManager.instance;
 	}
 	
 	// Update is called once per frame
@@ -49,14 +57,15 @@ public class Scr_PlayerOilSystem : MonoBehaviour {
         {
             spotLight.gameObject.SetActive(false);
             //Use IEnum to deactivate lantern after a a small period of time
-            lantern.gameObject.SetActive(false);
-            ShutDownLight();
+            coroutine = ShutDownLight();
         }
         SetOil(calcOil);
     }
 
     void RefillOil(float oilRefill)
     {
+        audioManager.PlaySound("OilPickUp");
+
         currentOil += oilRefill;
 
         if (currentOil > maxOil)
@@ -73,8 +82,19 @@ public class Scr_PlayerOilSystem : MonoBehaviour {
         oilMeter.fillAmount = myOil;
     }
 
-    void ShutDownLight()
+    IEnumerator ShutDownLight()
     {
-       //Flicker and shut down light
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(minSec, maxSec));
+            if (lantern.gameObject.activeInHierarchy)
+            {
+                lantern.gameObject.SetActive(false);
+            }
+            else
+            {
+                lantern.gameObject.SetActive(true);
+            }
+        }
     }
 }

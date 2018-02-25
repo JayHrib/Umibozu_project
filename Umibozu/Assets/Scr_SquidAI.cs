@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scr_EnemyAI : MonoBehaviour {
+public class Scr_SquidAI : MonoBehaviour {
 
     private Rigidbody2D rb;
 
-    //Player detection
     private float targetDistance;
     public float enemyLookDistance;
     public float attackDistance;
@@ -14,9 +13,6 @@ public class Scr_EnemyAI : MonoBehaviour {
     public float rotationSpeed;
     public Transform target;
 
-    //Patrolling
-    private float waitTime;
-    public float startWaitTime;
     public Transform moveSpot;
     public float minX;
     public float maxX;
@@ -25,9 +21,9 @@ public class Scr_EnemyAI : MonoBehaviour {
     private bool hitPlayer = false;
     private IEnumerator coroutine;
 
-    void Start () {
+	// Use this for initialization
+	void Start () {
         rb = GetComponent<Rigidbody2D>();
-        waitTime = startWaitTime;
 	}
 	
 	// Update is called once per frame
@@ -47,7 +43,7 @@ public class Scr_EnemyAI : MonoBehaviour {
         {
             PatrolArea();
         }
-	}
+    }
 
     void OnCollisionEnter2D(Collision2D other)
     {
@@ -74,16 +70,8 @@ public class Scr_EnemyAI : MonoBehaviour {
 
         if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
         {
-            if (waitTime <= 0)
-            {
-                LookAtTarget(moveSpot);
-                moveSpot.localPosition = new Vector2(Random.Range(-35, 35), Random.Range(-25, 100));
-                waitTime = startWaitTime;
-            }
-            else
-            {
-                waitTime -= Time.deltaTime;
-            }
+            LookAtTarget(moveSpot);
+            moveSpot.localPosition = new Vector2(Random.Range(-35, 35), Random.Range(-25, 100));
         }
     }
 
@@ -101,5 +89,4 @@ public class Scr_EnemyAI : MonoBehaviour {
             hitPlayer = false;
         }
     }
-
 }
