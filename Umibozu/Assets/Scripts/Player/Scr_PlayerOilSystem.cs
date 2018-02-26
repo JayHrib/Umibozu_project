@@ -57,7 +57,8 @@ public class Scr_PlayerOilSystem : MonoBehaviour {
         {
             spotLight.gameObject.SetActive(false);
             //Use IEnum to deactivate lantern after a a small period of time
-            coroutine = ShutDownLight();
+            //coroutine = ShutDownLight();
+            TurnOffLantern();
         }
         SetOil(calcOil);
     }
@@ -68,7 +69,12 @@ public class Scr_PlayerOilSystem : MonoBehaviour {
 
         currentOil += oilRefill;
 
-        if (currentOil > maxOil)
+        if (!lantern.gameObject.activeInHierarchy)
+        {
+            lantern.gameObject.SetActive(true);
+        }
+
+            if (currentOil > maxOil)
         {
             currentOil = maxOil;
         }
@@ -86,15 +92,13 @@ public class Scr_PlayerOilSystem : MonoBehaviour {
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(minSec, maxSec));
-            if (lantern.gameObject.activeInHierarchy)
-            {
-                lantern.gameObject.SetActive(false);
-            }
-            else
-            {
-                lantern.gameObject.SetActive(true);
-            }
+            yield return new WaitForSeconds(0.5f);
+            lantern.gameObject.SetActive(false);
         }
+    }
+
+    void TurnOffLantern()
+    {
+        lantern.gameObject.SetActive(false);
     }
 }

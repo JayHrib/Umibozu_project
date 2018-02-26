@@ -1,0 +1,762 @@
+fileFormatVersion: 2
+guid: 40c8524853b422d4f8a969f7284c67c8
+timeCreated: 1519571250
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spr_squidSwimming_0
+    21300002: spr_squidSwimming_1
+    21300004: spr_squidSwimming_2
+    21300006: spr_squidSwimming_3
+    21300008: spr_squidSwimming_4
+    21300010: spr_squidSwimming_5
+    21300012: spr_squidSwimming_6
+    21300014: spr_squidSwimming_7
+    21300016: spr_squidSwimming_8
+    21300018: spr_squidSwimming_9
+    21300020: spr_squidSwimming_10
+    21300022: spr_squidSwimming_11
+    21300024: spr_squidSwimming_12
+    21300026: spr_squidSwimming_13
+    21300028: spr_squidSwimming_14
+    21300030: spr_squidSwimming_15
+    21300032: spr_squidSwimming_16
+    21300034: spr_squidAttacking_0
+    21300036: spr_squidAttacking_18
+    21300038: spr_squidAttacking_2
+    21300040: spr_squidAttacking_3
+    21300042: spr_squidAttacking_4
+    21300044: spr_squidAttacking_5
+    21300046: spr_squidAttacking_6
+    21300048: spr_squidAttacking_7
+    21300050: spr_squidAttacking_8
+    21300052: spr_squidAttacking_9
+    21300054: spr_squidAttacking_10
+    21300056: spr_squidAttacking_11
+    21300058: spr_squidAttacking_12
+    21300060: spr_squidAttacking_13
+    21300062: spr_squidAttacking_14
+    21300064: spr_squidAttacking_15
+    21300066: spr_squidAttacking_16
+    21300068: spr_squidAttacking_17
+    21300070: spr_squid_35
+    21300072: spr_squidAttacking_19
+    21300074: spr_squidAttacking_20
+    21300076: spr_squidAttacking_21
+    21300078: spr_squidAttacking_22
+    21300080: spr_squidAttacking_23
+    21300082: spr_squidAttacking_24
+    21300084: spr_squidAttacking_25
+    21300086: spr_squidAttacking_26
+    21300088: spr_squidAttacking_27
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_squidSwimming_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 3664
+        width: 343
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_1
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 3671
+        width: 369
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_2
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 3679
+        width: 396
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_3
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 3687
+        width: 408
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_4
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 3701
+        width: 422
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_5
+      rect:
+        serializedVersion: 2
+        x: 2595
+        y: 3711
+        width: 438
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_6
+      rect:
+        serializedVersion: 2
+        x: 3111
+        y: 3727
+        width: 438
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_7
+      rect:
+        serializedVersion: 2
+        x: 3629
+        y: 3740
+        width: 426
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_8
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 3239
+        width: 420
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_9
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 3239
+        width: 400
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_10
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 3236
+        width: 388
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_11
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 3183
+        width: 258
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_12
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 3133
+        width: 148
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_13
+      rect:
+        serializedVersion: 2
+        x: 2727
+        y: 3136
+        width: 169
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_14
+      rect:
+        serializedVersion: 2
+        x: 3231
+        y: 3136
+        width: 188
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_15
+      rect:
+        serializedVersion: 2
+        x: 3685
+        y: 3141
+        width: 290
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidSwimming_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 2640
+        width: 328
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2197
+        width: 337
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_18
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 2205
+        width: 362
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_2
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 2200
+        width: 341
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_3
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 2199
+        width: 266
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_4
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2200
+        width: 265
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_5
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 2211
+        width: 257
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_6
+      rect:
+        serializedVersion: 2
+        x: 3191
+        y: 2207
+        width: 257
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_7
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 2209
+        width: 252
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_8
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1696
+        width: 246
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_9
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1704
+        width: 244
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_10
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1705
+        width: 274
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_11
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 1720
+        width: 291
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_12
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1743
+        width: 290
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_13
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 1752
+        width: 305
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_14
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 1752
+        width: 266
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_15
+      rect:
+        serializedVersion: 2
+        x: 3704
+        y: 1717
+        width: 251
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_16
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1179
+        width: 225
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_17
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1174
+        width: 156
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squid_35
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 1171
+        width: 155
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_19
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 1171
+        width: 153
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_20
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 1176
+        width: 162
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_21
+      rect:
+        serializedVersion: 2
+        x: 2721
+        y: 1183
+        width: 170
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_22
+      rect:
+        serializedVersion: 2
+        x: 3215
+        y: 1190
+        width: 209
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_23
+      rect:
+        serializedVersion: 2
+        x: 3652
+        y: 1183
+        width: 357
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_24
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 669
+        width: 394
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_25
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 664
+        width: 392
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_26
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 663
+        width: 394
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_squidAttacking_27
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 661
+        width: 373
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
