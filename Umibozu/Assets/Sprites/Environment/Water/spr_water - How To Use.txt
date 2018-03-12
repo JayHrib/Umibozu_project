@@ -1,0 +1,1 @@
+This is a single sprite sheet animation divided into 4 different spritesheets of 240 frames total. Each cell/frame is 512 by 512 pixels. Each sprite sheet has 64 cells/sprite images. The animation should be seamless and looping.

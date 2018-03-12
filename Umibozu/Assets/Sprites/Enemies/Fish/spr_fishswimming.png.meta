@@ -1,0 +1,807 @@
+fileFormatVersion: 2
+guid: b9e8a6f1f2837bc47989616b0f5de140
+timeCreated: 1519347468
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spr_fishswimming_0
+    21300002: spr_fishswimming_1
+    21300004: spr_fishswimming_2
+    21300006: spr_fishswimming_3
+    21300008: spr_fishswimming_4
+    21300010: spr_fishswimming_5
+    21300012: spr_fishswimming_6
+    21300014: spr_fishswimming_7
+    21300016: spr_fishswimming_8
+    21300018: spr_fishswimming_9
+    21300020: spr_fishswimming_10
+    21300022: spr_fishswimming_11
+    21300024: spr_fishswimming_12
+    21300026: spr_fishswimming_13
+    21300028: spr_fishswimming_14
+    21300030: spr_fishswimming_15
+    21300032: spr_fishswimming_16
+    21300034: spr_fishswimming_17
+    21300036: spr_fishswimming_18
+    21300038: spr_fishswimming_19
+    21300040: spr_fishswimming_20
+    21300042: spr_fishswimming_21
+    21300044: spr_fishswimming_22
+    21300046: spr_fishswimming_23
+    21300048: spr_fishswimming_24
+    21300050: spr_fishswimming_25
+    21300052: spr_fishswimming_26
+    21300054: spr_fishswimming_27
+    21300056: spr_fishswimming_28
+    21300058: spr_fishswimming_29
+    21300060: spr_fishswimming_30
+    21300062: spr_fishswimming_31
+    21300064: spr_fishswimming_32
+    21300066: spr_fishswimming_33
+    21300068: spr_fishswimming_34
+    21300070: spr_fishswimming_35
+    21300072: spr_fishswimming_36
+    21300074: spr_fishswimming_37
+    21300076: spr_fishswimming_38
+    21300078: spr_fishswimming_39
+    21300080: spr_fishswimming_40
+    21300082: spr_fishswimming_41
+    21300084: spr_fishswimming_42
+    21300086: spr_fishswimming_43
+    21300088: spr_fishswimming_44
+    21300090: spr_fishswimming_45
+    21300092: spr_fishswimming_46
+    21300094: spr_fishswimming_47
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_fishswimming_0
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 3615
+        width: 230
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_1
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 3608
+        width: 244
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_2
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 3608
+        width: 276
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_3
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 3613
+        width: 300
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_4
+      rect:
+        serializedVersion: 2
+        x: 2147
+        y: 3619
+        width: 330
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_5
+      rect:
+        serializedVersion: 2
+        x: 2639
+        y: 3623
+        width: 348
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_6
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 3970
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_7
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 3639
+        width: 385
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_8
+      rect:
+        serializedVersion: 2
+        x: 3659
+        y: 3669
+        width: 390
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_9
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3167
+        width: 406
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_10
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 3168
+        width: 385
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_11
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 3175
+        width: 426
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_12
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 3271
+        width: 417
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_13
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 3272
+        width: 401
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_14
+      rect:
+        serializedVersion: 2
+        x: 2727
+        y: 3216
+        width: 345
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_15
+      rect:
+        serializedVersion: 2
+        x: 3279
+        y: 3223
+        width: 296
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_16
+      rect:
+        serializedVersion: 2
+        x: 3670
+        y: 3508
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_17
+      rect:
+        serializedVersion: 2
+        x: 3684
+        y: 3510
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_18
+      rect:
+        serializedVersion: 2
+        x: 3767
+        y: 3189
+        width: 314
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_19
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 3492
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_20
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 3462
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_21
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 2640
+        width: 316
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_22
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 2607
+        width: 306
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_23
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 2741
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_24
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 2592
+        width: 264
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_25
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 2594
+        width: 284
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_26
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 2592
+        width: 273
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_27
+      rect:
+        serializedVersion: 2
+        x: 2673
+        y: 2588
+        width: 294
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_28
+      rect:
+        serializedVersion: 2
+        x: 3176
+        y: 2590
+        width: 321
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_29
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 2589
+        width: 341
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_30
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 2652
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_31
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 2645
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_32
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 2639
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_33
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 2630
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_34
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 2574
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_35
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 2075
+        width: 365
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_36
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2087
+        width: 369
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_37
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 2126
+        width: 383
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_38
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 2169
+        width: 378
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_39
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 2167
+        width: 397
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_40
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 2197
+        width: 432
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_41
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2192
+        width: 474
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_42
+      rect:
+        serializedVersion: 2
+        x: 3597
+        y: 2184
+        width: 380
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_43
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1640
+        width: 355
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_44
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 1623
+        width: 274
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_45
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1607
+        width: 292
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_46
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 1581
+        width: 243
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_fishswimming_47
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1618
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
