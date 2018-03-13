@@ -25,7 +25,7 @@ public class Scr_PinRotator : MonoBehaviour {
 
         if (ccrb == null)
         {
-            Debug.LogWarning("Compass carrier does not have a Rigidbody2D attached to it!");
+            Debug.LogWarning("PinRotator: Compass carrier does not have a Rigidbody2D attached to it!");
         }
 	}
 	
