@@ -26,7 +26,7 @@ public class Scr_ImageAppear : MonoBehaviour {
 
         if (toContinue)
         {
-            Destroy(this.gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

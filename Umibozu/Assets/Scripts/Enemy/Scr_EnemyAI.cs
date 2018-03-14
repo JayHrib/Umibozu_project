@@ -9,7 +9,7 @@ public class Scr_EnemyAI : MonoBehaviour {
     //Player detection
     private float targetDistance;
     public float enemyLookDistance;
-    public float attackDistance;
+    public float attackDistance = 7;
     public float enemyMovementSpeed;
     public float rotationSpeed;
     public Transform target;
@@ -23,11 +23,13 @@ public class Scr_EnemyAI : MonoBehaviour {
     public float minY;
     public float maxY;
     private bool hitPlayer = false;
-    private IEnumerator coroutine;
+    public float moveBackTimer = 4f;
+    private float timeToAttack;
 
     void Start () {
         rb = GetComponent<Rigidbody2D>();
         waitTime = startWaitTime;
+        timeToAttack = moveBackTimer;
 	}
 	
 	// Update is called once per frame
@@ -42,6 +44,12 @@ public class Scr_EnemyAI : MonoBehaviour {
             transform.position = Vector2.MoveTowards(transform.position, target.position, enemyMovementSpeed * Time.deltaTime);
         }
 
+        //Move back if player has been hit
+        else if (hitPlayer)
+        {
+            MoveAway();
+        }
+
         //Patrol set area
         else
         {
@@ -54,7 +62,6 @@ public class Scr_EnemyAI : MonoBehaviour {
         if (other.gameObject.CompareTag("Player"))
         {
             hitPlayer = true;
-            MoveAway();
         }
     }
 
@@ -89,17 +96,15 @@ public class Scr_EnemyAI : MonoBehaviour {
 
     void MoveAway()
     {
-        transform.localPosition = Vector2.MoveTowards(transform.localPosition, target.position, -enemyMovementSpeed * Time.deltaTime);
-        coroutine = MoveBackTimer(2.0f);
-    }
-
-    private IEnumerator MoveBackTimer(float time)
-    {
-        while (true)
+        if (timeToAttack <= 0)
         {
-            yield return new WaitForSeconds(time);
             hitPlayer = false;
+            timeToAttack = moveBackTimer;
+        }
+        else
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, -enemyMovementSpeed * Time.deltaTime);
+            timeToAttack -= Time.deltaTime;
         }
     }
-
 }
