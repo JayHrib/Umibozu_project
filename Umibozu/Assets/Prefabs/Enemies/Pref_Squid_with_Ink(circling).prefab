@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 95627404345817220}
   m_Layer: 10
   m_Name: Pref_ani_inkSplatter
-  m_TagString: InkSpill
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a9ffdd1fbcac84bbe9af3ccba99f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 20
 --- !u!212 &212284194258965524
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -366,4 +366,4 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
