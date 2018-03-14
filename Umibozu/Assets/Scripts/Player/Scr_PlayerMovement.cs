@@ -39,9 +39,8 @@ public class Scr_PlayerMovement : MonoBehaviour
         float movePlayer = Input.GetAxis("Vertical");
 
         //Move boat
-        if (alternativeControls && (transform.rotation.eulerAngles.z >= 91 && transform.rotation.eulerAngles.z <= 269)) // if the angle is between 91-269 change the contorls to use 'S' to move forward
+        if (alternativeControls && (transform.rotation.eulerAngles.z >= 120 && transform.rotation.eulerAngles.z <= 240)) // if the angle is between 91-269 change the contorls to use 'S' to move forward
         {
-            Debug.Log("Reversng controls");
             movePlayer *= -1;
         }
 

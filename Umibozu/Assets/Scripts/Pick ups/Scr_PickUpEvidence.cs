@@ -22,9 +22,6 @@ public class Scr_PickUpEvidence : MonoBehaviour {
         if (other.gameObject.CompareTag("Evidence"))
         {
             _evidence.amountPickedUp += 1;
-            Debug.Log(_evidence.amountPickedUp);
-            other.gameObject.SetActive(false);
-            Debug.Log("Picked up a Evidence!");
         }
     }
 }
