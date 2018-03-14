@@ -23,11 +23,26 @@ GameObject:
   - component: {fileID: 95477573041444792}
   - component: {fileID: 50449536012777888}
   - component: {fileID: 70929028050438742}
-  - component: {fileID: 114013136449491194}
+  - component: {fileID: 114108351455088480}
   m_Layer: 0
   m_Name: Pref_Squid
   m_TagString: Squid
   m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1796528828445798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4247726577043506}
+  m_Layer: 0
+  m_Name: MoveSpot
+  m_TagString: Untagged
+  m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -37,11 +52,25 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1564669587109254}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -52.815918, y: -40.56175, z: -37.992188}
+  m_LocalScale: {x: 1.1033157, y: 1.24322, z: 1}
+  m_Children:
+  - {fileID: 4247726577043506}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4247726577043506
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1796528828445798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.720173, y: 2.884082, z: 0}
+  m_LocalPosition: {x: 3.06, y: -3.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 4010530299750422}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50449536012777888
@@ -55,7 +84,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -96,7 +125,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114013136449491194
+--- !u!114 &114108351455088480
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -104,19 +133,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1564669587109254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8ea2fb99000c8341bfd6d31bd006e4f, type: 3}
+  m_Script: {fileID: 11500000, guid: 66a67f5ff06771b4299f376c1053dc24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLookDistance: 10
-  attackDistance: 7
+  enemyLookDistance: 12
+  attackDistance: 10
   enemyMovementSpeed: 1.5
   rotationSpeed: 90
   target: {fileID: 0}
-  moveSpot: {fileID: 0}
-  minX: 0
-  maxX: 0
-  minY: 0
-  maxY: 0
+  moveSpot: {fileID: 4247726577043506}
+  moveBackTimer: 3
 --- !u!212 &212626309217371392
 SpriteRenderer:
   m_ObjectHideFlags: 1
