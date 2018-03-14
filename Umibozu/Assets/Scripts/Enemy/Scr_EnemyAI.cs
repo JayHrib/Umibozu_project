@@ -23,7 +23,7 @@ public class Scr_EnemyAI : MonoBehaviour {
     public float minY;
     public float maxY;
     private bool hitPlayer = false;
-    public float moveBackTimer = 4f;
+    public float moveBackTimer = 3f;
     private float timeToAttack;
 
     void Start () {

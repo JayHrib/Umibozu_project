@@ -9,6 +9,12 @@ public class Images
     public Sprite frame;
 }
 
+[System.Serializable]
+public class StoryText
+{
+    public string sentence;
+}
+
 public class Scr_StorySystem : MonoBehaviour {
 
     public static Scr_StorySystem instance;
@@ -22,6 +28,8 @@ public class Scr_StorySystem : MonoBehaviour {
 
     [SerializeField]
     Images[] frames;
+    [SerializeField]
+    StoryText[] sentences;
 
 	// Use this for initialization
 	void Start () {
@@ -53,7 +61,6 @@ public class Scr_StorySystem : MonoBehaviour {
         {
             Debug.Log("Out of frames!");
         }
-
     }
 
     void ChangeImage(int index)
@@ -67,7 +74,7 @@ public class Scr_StorySystem : MonoBehaviour {
         currentFrame++;
         if (currentFrame == frames.Length)
         {
-            currentFrame = (frames.Length - 1);
+            currentFrame = 0;
         }
 
         ChangeImage(currentFrame);

@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212817919180003088}
   - component: {fileID: 50903967626471438}
   - component: {fileID: 61825440493926106}
-  - component: {fileID: 114897796502360302}
   - component: {fileID: 82561365059067514}
   m_Layer: 0
   m_Name: Pref_CormorantPickUp (1)
@@ -54,8 +53,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1264699536989300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 238.95, y: -54.802216, z: 0}
-  m_LocalScale: {x: 0.13772124, y: 0.12647478, z: 1}
+  m_LocalPosition: {x: 27.6, y: -266.3, z: 0.15039062}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children:
   - {fileID: 4940269026841242}
   m_Father: {fileID: 0}
@@ -199,18 +198,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114897796502360302
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1264699536989300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7af8b05d11a3e342a1a23e769cbc2fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customImage: {fileID: 0}
 --- !u!212 &212445766676216446
 SpriteRenderer:
   m_ObjectHideFlags: 1

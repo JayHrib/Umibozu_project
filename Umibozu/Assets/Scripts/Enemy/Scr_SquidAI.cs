@@ -8,23 +8,24 @@ public class Scr_SquidAI : MonoBehaviour {
 
     private float targetDistance;
     public float enemyLookDistance;
-    public float attackDistance;
-    public float enemyMovementSpeed;
+    public float attackDistance = 10f;
+    public float enemyMovementSpeed = 1.5f;
     public float rotationSpeed;
     public Transform target;
 
     public Transform moveSpot;
-    public float minX;
-    public float maxX;
-    public float minY;
-    public float maxY;
     private bool hitPlayer = false;
-    private IEnumerator coroutine;
+    public float moveBackTimer = 3f;
+    private float timeToAttack;
+    public float moveTimer = 2f;
+    private float timeToMove;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         rb = GetComponent<Rigidbody2D>();
-	}
+        timeToAttack = moveBackTimer;
+        timeToMove = moveTimer;
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -38,6 +39,11 @@ public class Scr_SquidAI : MonoBehaviour {
             transform.position = Vector2.MoveTowards(transform.position, target.position, enemyMovementSpeed * Time.deltaTime);
         }
 
+        else if (hitPlayer)
+        {
+            MoveAway();
+        }
+
         //Patrol set area
         else
         {
@@ -47,10 +53,10 @@ public class Scr_SquidAI : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
+
         if (other.gameObject.CompareTag("Player"))
         {
             hitPlayer = true;
-            MoveAway();
         }
     }
 
@@ -66,27 +72,29 @@ public class Scr_SquidAI : MonoBehaviour {
 
     void PatrolArea()
     {
-        rb.velocity = transform.up * enemyMovementSpeed;
-
-        if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
+        if (timeToMove <= 0)
         {
-            LookAtTarget(moveSpot);
-            moveSpot.localPosition = new Vector2(Random.Range(-35, 35), Random.Range(-25, 100));
+            rb.velocity = transform.up * enemyMovementSpeed;
+            timeToMove = moveTimer;
+        }
+        else
+        {
+            timeToMove -= Time.deltaTime;
         }
     }
 
     void MoveAway()
     {
-        transform.localPosition = Vector2.MoveTowards(transform.localPosition, target.position, -enemyMovementSpeed * Time.deltaTime);
-        coroutine = MoveBackTimer(2.0f);
-    }
-
-    private IEnumerator MoveBackTimer(float time)
-    {
-        while (true)
+        if (timeToAttack <= 0)
         {
-            yield return new WaitForSeconds(time);
             hitPlayer = false;
+            timeToAttack = moveBackTimer;
+        }
+        else
+        {
+            rb.velocity = transform.up * -enemyMovementSpeed;
+            //transform.position = Vector2.MoveTowards(transform.position, target.position, (-enemyMovementSpeed - 8.5f) * Time.deltaTime);
+            timeToAttack -= Time.deltaTime;
         }
     }
 }
