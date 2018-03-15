@@ -9,7 +9,9 @@ public class Scr_PlayerHealthSystem : MonoBehaviour {
     public float maxHealth;
     public Color damageColor;
     private float currentHealth = 0f;
-    private float damage = 0f;
+    public float sharkDamage = 0f;
+    public float hazardDamage = 0f;
+    public float squidDamage = 0f;
     private float healthRegen = 15.0f;
     private Color originalColor;
     private float timerDamageColorChange = 0;
@@ -73,15 +75,21 @@ public class Scr_PlayerHealthSystem : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Shark"))
         {
-            damage = 10f;
-            TakeDamage(damage);
+            //sharkDamage = 10f;
+            TakeDamage(sharkDamage);
         }
 
         if (other.gameObject.CompareTag("Hazard"))
         {
             audioManager.PlaySound("ShipCrash");
-            damage = 15f;
-            TakeDamage(damage);
+            //hazardDamage = 15f;
+            TakeDamage(hazardDamage);
+        }
+
+        if (other.gameObject.CompareTag("Squid"))
+        {
+            //sharkDamage = 10f;
+            TakeDamage(squidDamage);
         }
     }
 

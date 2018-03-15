@@ -30,10 +30,18 @@ public class Scr_EnemyHealthSystem : MonoBehaviour {
                 childInkSplatterObj.gameObject.SetActive(false);
             }
             childInkSplatterObj.transform.position = other.gameObject.transform.position;
-            childInkSplatterObj.transform.rotation = other.gameObject.transform.rotation;
+            childInkSplatterObj.transform.localRotation = other.gameObject.transform.localRotation;
             childInkSplatterObj.gameObject.SetActive(true);
         }
-        
+
+        /*if (other.gameObject.CompareTag("CormorantBird"))
+        {
+            audioManager.PlaySound("HitEnemy");
+            damage = 20f;
+            TakeDamage(damage);
+            Debug.Log("in Enemy collision Enter");
+        }*/
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -46,7 +54,7 @@ public class Scr_EnemyHealthSystem : MonoBehaviour {
         if (other.gameObject.CompareTag("CormorantBird"))
         {
             audioManager.PlaySound("HitEnemy");
-            damage = 2.5f;
+            damage = 30f;
             TakeDamage(damage);
             Debug.Log("in Enemy Trigger Enter");
         }
