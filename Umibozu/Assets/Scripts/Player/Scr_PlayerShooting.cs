@@ -55,6 +55,7 @@ public class Scr_PlayerShooting : MonoBehaviour {
                     readyToFire = false;
                     Shoot();
                     reloadTimer = startReloadTimer;
+                    audioManager.PlaySound("ReloadHarpoon");
                 }
 
             }
@@ -84,9 +85,6 @@ public class Scr_PlayerShooting : MonoBehaviour {
         arrow.transform.position = gameObject.transform.position;
         arrow.SetActive(true);
 
-        arrow.GetComponent<Rigidbody2D>().AddForce(transform.up * moveSpeed);
-        //arrow.GetComponent<Rigidbody2D>().velocity = new Vector2((mousePosition.x-transform.position.x), (mousePosition.y - transform.position.y))*moveSpeed;
-        //arrow.GetComponent<Rigidbody2D>().velocity.Normalize();
-        
+        arrow.GetComponent<Rigidbody2D>().AddForce(transform.up * moveSpeed);        
     }
 }

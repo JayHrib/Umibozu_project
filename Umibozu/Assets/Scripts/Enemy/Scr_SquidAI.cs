@@ -36,7 +36,7 @@ public class Scr_SquidAI : MonoBehaviour {
         if (targetDistance < attackDistance && !hitPlayer)
         {
             LookAtTarget(target);
-            transform.position = Vector2.MoveTowards(transform.position, target.position, enemyMovementSpeed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, target.position, (enemyMovementSpeed / 2) * Time.deltaTime);
         }
 
         else if (hitPlayer)

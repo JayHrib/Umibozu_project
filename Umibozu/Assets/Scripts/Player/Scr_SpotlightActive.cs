@@ -12,7 +12,6 @@ public class Scr_SpotlightActive : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                FindObjectOfType<Scr_AudioManager>().PlaySound("LightSwitch");
                 OnOff();
             }
         }
@@ -22,10 +21,12 @@ public class Scr_SpotlightActive : MonoBehaviour {
     {
         if (spotlight.gameObject.activeInHierarchy)
         {
+            FindObjectOfType<Scr_AudioManager>().PlaySound("SnuffLantern");
             spotlight.gameObject.SetActive(false);
         }
         else
         {
+            FindObjectOfType<Scr_AudioManager>().PlaySound("LightLantern");
             spotlight.gameObject.SetActive(true);
         }
     }

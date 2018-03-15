@@ -18,7 +18,7 @@ public class Scr_AfterFinalCutScene : MonoBehaviour {
     {
         if (videoPlayer.isPrepared && !videoPlayer.isPlaying)
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(2);
         }
     }
 }

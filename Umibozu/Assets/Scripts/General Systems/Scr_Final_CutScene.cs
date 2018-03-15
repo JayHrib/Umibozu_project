@@ -13,7 +13,7 @@ public class Scr_Final_CutScene : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("OnTriggerEnter2D with player");
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(8);
         }
     }
 
@@ -22,7 +22,7 @@ public class Scr_Final_CutScene : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("OnTriggerEnter2D with player");
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(8);
         }
     }
 }
